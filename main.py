@@ -11,8 +11,8 @@ import os
 
 # Task 1: Data Ingestion and Validation
 
-data_fol = 'C:\\Users\\Admin\\Desktop\\College\\Assignments\\Programming With Python\\Capstone\\data\\'
-output_fol = 'C:\\Users\\Admin\\Desktop\\College\\Assignments\\Programming With Python\\Capstone\\output\\'
+data_fol = 'campus-energy-dashboard-prabhatbhatia\\data\\'
+output_fol = 'campus-energy-dashboard-prabhatbhatia\\output\\'
 
 load_fol = os.listdir(data_fol)
 dataframes = []
@@ -254,5 +254,6 @@ with open(summary_path, 'w') as f:
             f.write(f"Building: {name} | Peak Usage: {peak[1]} kWh at {peak[0]}\n")
         else:
             f.write(f"Building: {name} | No readings available\n")
+
 
 print("Capstone project executed successfully. Check output folder for results.")
